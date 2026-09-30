@@ -45,13 +45,7 @@ La aplicación tiene dos pantallas principales:
 - Uso de componentes reutilizables (como el componente `<Card />` para mostrar los personajes).
 - Lógica separada usando un custom hook llamado `useFetchCharacters`.
 
-## Tecnologías
-- React Native
-- Expo
-- React Navigation
 
-## Cómo correr el proyecto localmente
-Si quieres probar el código en tu computadora:
 
 1. Clona este repositorio.
 2. Abre una terminal en la carpeta del proyecto.
