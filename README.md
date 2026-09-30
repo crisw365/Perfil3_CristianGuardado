@@ -1,130 +1,29 @@
-# 📱 Perfil3_CristianGuardadoApp
+# Proyecto Perfil 3 - Cristian Guardado
 
-## Evaluación Práctica — Desarrollo Móvil con React Native y Expo
+Este es mi proyecto para la evaluación práctica de Desarrollo de Aplicaciones Móviles. Es una aplicación creada con React Native y Expo.
 
----
+¿Qué hace la aplicación?
+La aplicación tiene dos pantallas principales:
+1. **Inicio (Home):** Muestra mis datos personales básicos.
+2. **Lista de Personajes (API View):** Se conecta a la API pública de Rick and Morty para obtener y mostrar una lista de personajes. 
 
-### 📋 Información del Estudiante
+## Requisitos que cumple el proyecto
+- Navegación entre pantallas usando React Navigation.
+- Consumo de una API usando `fetch` y Promesas (`async/await`).
+- Uso de componentes reutilizables (como el componente `<Card />` para mostrar los personajes).
+- Lógica separada usando un custom hook llamado `useFetchCharacters`.
 
-| Campo         | Detalle                          |
-| ------------- | -------------------------------- |
-| **Nombre**    | Cristian Alejandro Guardado      |
-| **Carnet**    | XX-XXXX-XXXX                     |
-| **Sección**   | 01                               |
-| **Grupo**     | 03                               |
-| **Materia**   | Desarrollo de Aplicaciones Móviles |
-| **Docente**   | [Nombre del Docente]             |
-| **Fecha**     | Septiembre 2026                  |
+## Tecnologías
+- React Native
+- Expo
+- React Navigation
 
----
+## Cómo correr el proyecto localmente
+Si quieres probar el código en tu computadora:
 
-### 📖 Descripción del Proyecto
-
-Aplicación móvil desarrollada en **React Native** con **Expo** que consta de dos pantallas:
-
-1. **Pantalla Home (Presentación):** Muestra la información personal del estudiante con un diseño limpio y moderno, incluyendo un botón destacado de navegación.
-2. **Pantalla API View:** Consume la API pública de [Rick and Morty](https://rickandmortyapi.com/api/character) y muestra una lista de personajes con su nombre, imagen, estado y origen.
-
----
-
-### 🛠️ Tecnologías Utilizadas
-
-- **React Native** — Framework de desarrollo móvil
-- **Expo** — Plataforma de desarrollo y build
-- **React Navigation** (`@react-navigation/native`, `@react-navigation/native-stack`) — Navegación entre pantallas
-- **Rick and Morty API** — Fuente de datos externa
-
----
-
-### 📂 Estructura del Proyecto
-
-```
-Perfil3_CristianGuardadoApp/
-├── App.js                          # Punto de entrada y configuración de navegación
-├── app.json                        # Configuración de Expo (icon, splash)
-├── index.js                        # Registro del componente raíz
-├── package.json                    # Dependencias del proyecto
-├── assets/
-│   ├── icon.png                    # Ícono de la aplicación
-│   ├── splash.png                  # Pantalla de carga personalizada
-│   └── favicon.png                 # Favicon para web
-└── src/
-    ├── components/
-    │   ├── Card.js                 # Componente reutilizable de tarjeta
-    │   ├── LoadingIndicator.js     # Componente de indicador de carga
-    │   └── ErrorMessage.js         # Componente de mensaje de error
-    ├── hooks/
-    │   └── useFetchCharacters.js   # Custom Hook para consumo de API
-    └── screens/
-        ├── HomeScreen.js           # Pantalla 1: Información del estudiante
-        └── APIViewScreen.js        # Pantalla 2: Lista de personajes (API)
-```
-
----
-
-### 🏗️ Arquitectura y Patrones Aplicados
-
-| Patrón                    | Implementación                                                                  |
-| ------------------------- | ------------------------------------------------------------------------------- |
-| **Custom Hooks**          | `useFetchCharacters.js` — Encapsula `fetch`, maneja `data`, `loading`, `error` |
-| **Componentización**      | `Card`, `LoadingIndicator`, `ErrorMessage` — Componentes reutilizables          |
-| **Separación de intereses** | La lógica de datos está en el hook, la UI en las pantallas                    |
-| **Props drilling**        | `Card` recibe datos vía props, sin dependencias externas                       |
-
----
-
-### 🚀 Instalación y Ejecución
-
-```bash
-# 1. Clonar el repositorio
-git clone https://github.com/TU_USUARIO/Perfil3_CristianGuardadoApp.git
-
-# 2. Entrar al directorio del proyecto
-cd Perfil3_CristianGuardadoApp
-
-# 3. Instalar dependencias
-npm install
-
-# 4. Iniciar el proyecto con Expo
-npx expo start
-```
-
----
-
-### 📦 Generar APK con EAS Build
-
-```bash
-# Instalar EAS CLI globalmente
-npm install -g eas-cli
-
-# Iniciar sesión en Expo
-eas login
-
-# Configurar el proyecto para EAS
-eas build:configure
-
-# Generar APK de desarrollo/preview
-eas build --platform android --profile preview
-```
-
----
-
-### 📸 Capturas de Pantalla
-
-| Pantalla Home | Pantalla API View |
-| :-----------: | :---------------: |
-| *(Insertar captura)* | *(Insertar captura)* |
-
----
-
-### 🎥 Video Demostrativo
-
-🔗 [Enlace al video demostrativo](#)
-
-> El video muestra la navegación entre pantallas, la carga de datos desde la API y la interacción con la lista de personajes.
-
----
-
-### 📄 Licencia
-
-Proyecto desarrollado con fines académicos. Todos los datos de personajes pertenecen a [Rick and Morty API](https://rickandmortyapi.com/).
+1. Clona este repositorio.
+2. Abre una terminal en la carpeta del proyecto.
+3. Instala los paquetes necesarios ejecutando:
+   `npm install`
+4. Inicia la aplicación con:
+   `npx expo start`
