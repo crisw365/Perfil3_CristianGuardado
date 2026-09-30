@@ -4,10 +4,10 @@
     "slug": "Perfil3_CristianGuardadoApp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/android-icon-foreground.png",
+    "icon": "./assets/PortalRick.jpg",
     "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/PortalRick.jpg",
+      "image": "./assets/Portalfdxg.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#0F0F1A"
     },
@@ -16,7 +16,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/android-icon-foreground.png",
+        "foregroundImage": "./assets/PortalRick.jpg",
         "backgroundColor": "#0F0F1A"
       },
       "package": "com.cristianguardado.perfil3app"
